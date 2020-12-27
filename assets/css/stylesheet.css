@@ -1,0 +1,166 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #d33100;
+}
+
+body, html {
+  margin: 0;
+  padding: 0:;
+}
+
+header {
+  display:flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color:#000000;
+  color: white
+}
+
+header h1 {
+  font-size: 2.35vw;
+  background-color: #d33100;
+  color:#ffffff;
+  padding: 10px 10px 10px 40px;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  margin: 20px;
+  color: #d33100;
+  padding: 10px 15px;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+
+#hero {
+  display:flex;
+  background: url("../images/senna-xp-monico.jpg");
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-me1 h2 {
+  display: flex;
+  text-align: left;
+  min-height: 300px;
+}
+
+.contact-me {
+  padding: 50px;
+
+}
+
+.contact-me h2 {
+  display: flex;
+  text-align: left;
+  min-height: 300px;
+}
+
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+#grid-container h4 {
+  font-size: .65 vw;
+  text-align: match-parent;
+  justify-content: space-between;
+  background-color: #d33100;
+  color:#ffff;
+  padding: 8px 8px 8px 30px;
+}
+
+#grid-container a {
+  text-decoration: none;
+}
+
+
+.grid-item-1{
+  min-height: 150px;
+  background: url("../images/bmw-logo.jpg");
+  background-position: center center;
+  background-size: cover;
+  
+}
+
+.grid-item-2 {
+  min-height: 150px;
+  background: url("../images/logo-McLaren.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.grid-item-3 {
+  min-height: 150px;
+  background: url("../images/hero-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.grid-item-4 {
+  min-height: 150px;
+  background: url("../images/digital-marketing-meeting.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.grid-item.large {
+  background: url("../images/selfie.jpg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+}
